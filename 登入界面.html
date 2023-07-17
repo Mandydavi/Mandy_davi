@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <!--这是标题名字-->
+    <title>Mandy_davi</title>
+    <!--这是标题图片-->
+    <link href="标题图片.png" rel="shortcut icon">
+    <style type="text/css">
+        body {
+            font-family: Arail;
+            font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+            background-color: #B47879;
+
+
+
+        }
+
+        .one {
+            background-color: #DBBFC0;
+            width: 400px;
+            height: 500px;
+            padding: 30px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*左上角*/
+            border-top-left-radius: 60px;
+            /*右上角*/
+            border-top-right-radius: 30px;
+            /*左下角*/
+            border-bottom-right-radius: 60px;
+            /*右下角*/
+            border-bottom-left-radius: 30px;
+        }
+
+        .windows {
+            text-align: center;
+            /* 单元格内容居中对齐 */
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .eye {
+            width: 16px;
+            height: 14px;
+            position: absolute;
+            display: inline-block;
+            cursor: pointer;
+            left: 328px;
+            top: 127px;
+        }
+
+        .eye.close {
+            background: url(../images/pigsney-close.png) center center no-repeat;
+        }
+
+        .eye.open {
+            background: url(../images/pigsney-open.png) center center no-repeat;
+            background-color: #FFFFFF
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            border-bottom: 1px solid #B47879;
+            margin: 50px auto;
+        }
+
+        .box input {
+            width: 200px;
+            height: 40px;
+            border: 0;
+            /* 取消蓝色边框 */
+            outline: none;
+        }
+
+        .box img {
+            position: absolute;
+            top: 12px;
+            right: 2px;
+            width: 24px;
+        }
+
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 67%;
+            margin-top: 10px;
+            background-image: linear-gradient(to right, #B47879, #DBBFC0);
+            color: #fff;
+        }
+
+        .in {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img src="logo.jpg" width="50" heght="50">
+
+    <div class="one" align="center">
+
+        <table width="355" height="200" border="0" align="center" cellspacing="0">
+
+            <tr>
+                <td class="windows" solspan="2">
+                    <h1><sup>登</sup><sub>录</sub></h1>
+                </td>
+            </tr>
+            <tr>
+                <td width="108" height="57" align="right" class="Mandy" solspan="2">
+                    <div class="box">
+
+                        <input type="text" name="" placeholder="账户" id="pwd" style="background: #DBBFC0;">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td height="108" height="57" align="right" solspan="2">
+                    <div class="box">
+
+                        <input type="password" name="" placeholder="密码" id="pwd" style="background: #DBBFC0;">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="windows">
+                    <h6>
+                        忘记密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="注册.html">注册</a>
+                    </h6>
+                </td>
+            </tr>
+            <tr>
+                <td height="100" colspan="2" align="center" class="in">
+
+                    <a href="主页.html"><input type="submit" value="登录" class="btn" text="black" style="color: black"></a>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
