@@ -18,12 +18,14 @@
         .one {
             background-color: #DBBFC0;
             width: 400px;
-            height: 500px;
-            padding: 30px;
+            height: 420px;
+            padding: 40px;
             position: absolute;
+            background-image: linear-gradient(to right, #B47879, #DBBFC0);
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
+            /*调整弧度的*/
             /*左上角*/
             border-top-left-radius: 60px;
             /*右上角*/
@@ -47,8 +49,8 @@
             position: absolute;
             display: inline-block;
             cursor: pointer;
-            left: 328px;
-            top: 127px;
+            left: 350px;
+            top: 200px;
         }
 
         .eye.close {
@@ -62,14 +64,14 @@
 
         .box {
             position: relative;
-            width: 200px;
-            border-bottom: 1px solid #B47879;
-            margin: 50px auto;
+            width: 210px;
+            border-bottom: 2px solid #B47879;
+            margin: 30px auto;
         }
 
         .box input {
             width: 200px;
-            height: 40px;
+            height: 20px;
             border: 0;
             /* 取消蓝色边框 */
             outline: none;
@@ -87,20 +89,57 @@
             padding: 10px;
             width: 67%;
             margin-top: 10px;
-            background-image: linear-gradient(to right, #B47879, #DBBFC0);
-            color: #fff;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            
+
+            /*调整弧度的*/
+            /*左上角*/
+            border-top-left-radius: 50px;
+            /*右上角*/
+            border-top-right-radius: 50px;
+            /*左下角*/
+            border-bottom-right-radius: 50px;
+            /*右下角*/
+            border-bottom-left-radius: 50px;
         }
 
         .in {
             color: black;
         }
-    </style>
 
+        /*图片*/
+        .one6 {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .th1{
+            color:aqua;
+            
+            
+            padding: 20px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+<script>
+    function displayDate(){
+        document.getElementById("demo").innerHTML=Date();
+    }
+ </script>
 </head>
 
-<body>
+<body background="Forest-wood-fence-sunlight_1680x1050.jpeg">
 
-    <img src="logo.jpg" width="50" heght="50">
+    <div class="one6">
+        <img src="logo.jpg" width="50" heght="50">
+    </div>
 
     <div class="one" align="center">
 
@@ -130,7 +169,7 @@
             <tr>
                 <td class="windows">
                     <h6>
-                        忘记密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="注册.html">注册</a>
+                        <button type="button" onclick="alert('别点了什么也没有写！')">忘记密码</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="注册.html">注册</a>
                     </h6>
                 </td>
             </tr>
@@ -138,13 +177,17 @@
                 <td height="100" colspan="2" align="center" class="in">
 
                     <a href="主页.html"><input type="submit" value="登录" class="btn" text="black" style="color: black"></a>
-
+                    
                 </td>
             </tr>
         </table>
 
     </div>
-
+    <div class="th1">
+        <p id="demo">这里可以显示日历和时间</p>
+    <button type="button" onclick="displayDate()">显示日期</button>
+    
+    </div>
 </body>
 
 </html>
