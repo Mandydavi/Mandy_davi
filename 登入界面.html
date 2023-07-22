@@ -70,7 +70,7 @@
         }
 
         .box input {
-            width: 200px;
+            width: 210px;
             height: 20px;
             border: 0;
             /* 取消蓝色边框 */
@@ -92,7 +92,6 @@
             background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-            
 
             /*调整弧度的*/
             /*左上角*/
@@ -113,32 +112,31 @@
         .one6 {
             width: 100px;
             height: 100px;
-            padding: 20px;
+            padding: 10px;
             position: absolute;
             top: 20px;
             left: 10px;
         }
-        .th1{
-            color:aqua;
-            
-            
-            padding: 20px;
+
+        .th1 {
+            color: aqua;
+            padding: 5px;
             position: absolute;
             bottom: 10px;
             left: 10px;
         }
     </style>
-<script>
-    function displayDate(){
-        document.getElementById("demo").innerHTML=Date();
-    }
- </script>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
 </head>
 
 <body background="Forest-wood-fence-sunlight_1680x1050.jpeg">
 
     <div class="one6">
-        <img src="logo.jpg" width="50" heght="50">
+        <img src="logo.jpg" width="50" heght="50" style="position: 10px;">
     </div>
 
     <div class="one" align="center">
@@ -147,7 +145,10 @@
 
             <tr>
                 <td class="windows" solspan="2">
-                    <h1><sup>登</sup><sub>录</sub></h1>
+                    <h1 style="margin: 10px;">
+                        <sup>登</sup>
+                        <sub>录</sub>
+                    </h1>
                 </td>
             </tr>
             <tr>
@@ -168,16 +169,19 @@
             </tr>
             <tr>
                 <td class="windows">
-                    <h6>
-                        <button type="button" onclick="alert('别点了什么也没有写！')">忘记密码</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="注册.html">注册</a>
+                    <h6 style="margin: 10px;">
+                        <button type="button" onclick="alert('别点了什么也没有写！')"
+                            style="border: 10px; background-color:transparent;;padding: 6px;">忘记密码</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="注册.html">注册</a>
                     </h6>
                 </td>
             </tr>
             <tr>
                 <td height="100" colspan="2" align="center" class="in">
 
-                    <a href="主页.html"><input type="submit" value="登录" class="btn" text="black" style="color: black"></a>
-                    
+                    <a href="主页.html"><input type="submit" value="登录" class="btn" text="black"
+                            style="color: black; max-width:200px; border:10px;margin-top: 0px;"></a>
+
                 </td>
             </tr>
         </table>
@@ -185,8 +189,9 @@
     </div>
     <div class="th1">
         <p id="demo">这里可以显示日历和时间</p>
-    <button type="button" onclick="displayDate()">显示日期</button>
-    
+        <button type="button" onclick="displayDate()"
+            style="background-color: transparent;border: 0px;color:aqua;padding: 0px;">显示日期</button>
+
     </div>
 </body>
 
