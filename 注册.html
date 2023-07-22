@@ -39,6 +39,8 @@
 
         .fourth {
             font-size: 27px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
 
         }
 
@@ -64,7 +66,7 @@
             height: 350px;
             padding: 50px;
             position: absolute;
-            
+
             top: 19%;
             left: 60%;
 
@@ -105,14 +107,15 @@
             padding: 10px;
             width: 50%;
             margin-top: 10px;
-            
+            /*彩色背景*/
             background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-            color: #fff;
             position: absolute;
             top: 50%;
             left: 26%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300px;
 
             /*左上角*/
             border-top-left-radius: 25px;
@@ -130,28 +133,30 @@
             padding: 30px;
             position: absolute;
             top: -1.9vh;
-            left: 2%;
+            left: 3px;
             color: black;
         }
 
         .three4 {
             height: 20px;
-            width: 50%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
+        /*登录*/
         .fh {
-            width: 400px;
-            height: 500px;
             padding: 30px;
             position: absolute;
-            top: -0.38vh;
-            left: 15%;
+            top: 1px;
+            left: 12%;
             color: black;
+            font-size: 10px;
+            padding: 25px;
         }
-        .th{
+
+        .th {
             height: 20px;
             width: 50%;
         }
-        
     </style>
 </head>
 
@@ -160,12 +165,13 @@
     <div class="one">
         <img src="logo.jpg" width="50" height="50">
     </div>
+
     <div class="two">
         <div class="three">
-            <h1>社会</h1>
+            <h1 style="margin-bottom: 10px;">社会</h1>
         </div>
         <div class="fourth">
-            <p>
+            <p style="margin-top: 20px;">
                 让复杂的世界更简单
             </p>
         </div>
@@ -173,19 +179,19 @@
 
     <div class="one1">
         <div class="fourth2">
-            <div class="three4">
-                <h1>欢迎注册</h1>
+            <div class="three4" style="margin: 3px;">
+                <h1 style="margin-bottom: 3px;">欢迎注册</h1>
             </div>
-            <h6>已用账号？
-                
+            <h6 style="margin-top: 20px;">已用账号？
+
             </h6>
         </div>
-        
+
         <div class="fourth1">
             <div class="th">
-            <div class="fh">
-            <a href="登入界面.html">登录</a>
-            </div>
+                <div class="fh">
+                    <a href="登入界面.html" style="padding-left: 13px;;">登录</a>
+                </div>
             </div>
             <form>
                 <div class="box">
@@ -195,7 +201,7 @@
 
                 <div class="box">
 
-                    <input type="text" name="" placeholder="账户" id="pwd" style="background: beige;">
+                    <input type="text" name="" placeholder="邮箱或手机号" id="pwd" style="background: beige;">
                 </div>
 
                 <div class="box">
@@ -203,7 +209,9 @@
                     <input type="password" name="" placeholder="密码" id="pwd" style="background: beige;">
                 </div>
 
-                <a href="草稿.html"><input type="submit" value="注册" class="btn" text="black" style="color: black"></a>
+                <a href="草稿.html"><button type="button" onclick="alert('别点了还是什么也没有写！')"
+                        style="border: 10px; background-color:transparent;;padding: 6px;"><input type="submit"
+                            value="注册" class="btn" text="black" style="color: black;border: 0px;"></button></a>
 
         </div>
     </div>
