@@ -6,9 +6,6 @@
     <!--这是标题图片-->
     <link href="标题图片.png" rel="icon">
     <style type="text/css">
-        body {
-            background-size: auto;
-        }
 
         /*图片*/
         .one {
@@ -157,13 +154,27 @@
             height: 20px;
             width: 50%;
         }
+
+        .th1 {
+            color: aqua;
+            padding: 5px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
     </style>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
 </head>
 
-<body background="Forest-wood-fence-sunlight_1680x1050.jpeg">
-
+<body background="Forest-wood-fence-sunlight_1680x1050.jpeg" style="height: 1000px;">
     <div class="one">
-        <img src="logo.jpg" width="50" height="50">
+        <!--position固定值位置-->
+        <img src="logo.jpg" width="50" height="50" style="float:left; position: fixed;" >
+
     </div>
 
     <div class="two">
@@ -216,6 +227,12 @@
         </div>
     </div>
     </form>
+    <div class="th1">
+        <p id="demo">这里可以点击显示日历和时间</p>
+        <button type="button" onclick="displayDate()"
+            style="background-color: transparent;border: 0px;color:aqua;padding: 0px;">显示日期</button>
+
+    </div>
 </body>
 
 </html>
