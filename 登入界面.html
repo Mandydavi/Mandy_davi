@@ -8,60 +8,37 @@
     <style type="text/css">
         body {
             font-family: Arail;
-            font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+            font-family: Georgia, 'Times New Roman', Times, serif;;
             background-color: #B47879;
 
 
 
         }
 
+        /*登录窗口*/
         .one {
             background-color: #DBBFC0;
             width: 400px;
             height: 420px;
             padding: 40px;
             position: absolute;
-            background-image: linear-gradient(to right, #B47879, #DBBFC0);
+            background: linear-gradient(#e66465, #9198e5);
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            /*调整弧度的*/
-            /*左上角*/
-            border-top-left-radius: 60px;
-            /*右上角*/
-            border-top-right-radius: 30px;
-            /*左下角*/
-            border-bottom-right-radius: 60px;
-            /*右下角*/
-            border-bottom-left-radius: 30px;
+            /*调整弧度*/
+            border-radius: 60px 30px 60px 30px;
         }
 
+        /*登录居中和字体样式*/
         .windows {
             text-align: center;
             /* 单元格内容居中对齐 */
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
 
         }
 
-        .eye {
-            width: 16px;
-            height: 14px;
-            position: absolute;
-            display: inline-block;
-            cursor: pointer;
-            left: 350px;
-            top: 200px;
-        }
-
-        .eye.close {
-            background: url(../images/pigsney-close.png) center center no-repeat;
-        }
-
-        .eye.open {
-            background: url(../images/pigsney-open.png) center center no-repeat;
-            background-color: #FFFFFF
-        }
-
+        /*账号框框样式*/
         .box {
             position: relative;
             width: 210px;
@@ -71,7 +48,7 @@
 
         .box input {
             width: 210px;
-            height: 20px;
+            height: 19px;
             border: 0;
             /* 取消蓝色边框 */
             outline: none;
@@ -84,26 +61,21 @@
             width: 24px;
         }
 
+        /*登录窗口样式*/
         .btn {
             text-align: center;
             padding: 10px;
             width: 67%;
             margin-top: 10px;
+            /*彩色颜色渐变*/
             background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            border-radius: 50px 50px 50px 50px;
 
-            /*调整弧度的*/
-            /*左上角*/
-            border-top-left-radius: 50px;
-            /*右上角*/
-            border-top-right-radius: 50px;
-            /*左下角*/
-            border-bottom-right-radius: 50px;
-            /*右下角*/
-            border-bottom-left-radius: 50px;
         }
 
+        /*字体颜色*/
         .in {
             color: black;
         }
@@ -118,12 +90,13 @@
             left: 10px;
         }
 
+        /*点击显示时间*/
         .th1 {
             color: aqua;
-            padding: 5px;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
+            
+            
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;;
         }
     </style>
     <script>
@@ -133,10 +106,10 @@
     </script>
 </head>
 
-<body background="Forest-wood-fence-sunlight_1680x1050.jpeg">
+<body background="Forest-wood-fence-sunlight_1680x1050.jpeg" style="height: 950px;">
 
     <div class="one6">
-        <img src="logo.jpg" width="50" heght="50" style="position: 10px;">
+        <img src="logo.jpg" width="50" heght="50" style="position: 10px; position: fixed;">
     </div>
 
     <div class="one" align="center">
@@ -169,11 +142,12 @@
             </tr>
             <tr>
                 <td class="windows">
-                    <h6 style="margin: 10px;">
+                    <h6 style="margin: 0px;">
                         <button type="button" onclick="alert('别点了什么也没有写！')"
-                            style="border: 10px; background-color:transparent;;padding: 6px;">忘记密码</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                            href="注册.html">注册</a>
-                    </h6>
+                            style="border: 10px; background-color:transparent;;padding: 6px;font-size: 10px;">忘记密码?</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="注册.html" style="padding: 6px; text-decoration: none;">注册</a>
+<!--text-decoration: none去掉超链接的下划线-->
+                        </h6>
                 </td>
             </tr>
             <tr>
@@ -187,12 +161,13 @@
         </table>
 
     </div>
-    <div class="th1">
-        <p id="demo">这里可以显示日历和时间</p>
+    
+        <p id="demo" style="color:aqua; position:absolute ; bottom: 20px;">->这里可以点击显示日历和时间<-</p>
         <button type="button" onclick="displayDate()"
-            style="background-color: transparent;border: 0px;color:aqua;padding: 0px;">显示日期</button>
+            style="background-color: transparent;border: 0px;color:aqua;padding: 0px; position:absolute; bottom:10px">显示日期</button>
 
-    </div>
+    
 </body>
-
+<!--static、relative、absolute、fixed
+    静态位置、相对位置、绝对位置、固定位置-->>
 </html>
