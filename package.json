@@ -1,0 +1,25 @@
+{
+  "name": "mandy_davi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve",
+    "format": "prettier --write \"**/*.{js,css,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandydavi/Mandy_davi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mandydavi/Mandy_davi/issues"
+  },
+  "homepage": "https://github.com/Mandydavi/Mandy_davi#readme",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "serve": "^14.2.0"
+  }
+}
