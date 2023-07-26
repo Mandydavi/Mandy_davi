@@ -7,7 +7,7 @@
     <link href="标题图片.png" rel="shortcut icon">
     <style type="text/css">
         body {
-            font-family: Arail;
+            
             font-family: Georgia, 'Times New Roman', Times, serif;;
             background-color: #B47879;
 
@@ -18,16 +18,17 @@
         /*登录窗口*/
         .one {
             background-color: #DBBFC0;
-            width: 400px;
-            height: 420px;
-            padding: 40px;
+            width: 670px;
+            height: 500px;
+            padding: 30px;
             position: absolute;
-            background: linear-gradient(#e66465, #9198e5);
+            background:linear-gradient(10deg, rgb(7, 7, 10), red,aliceblue);
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             /*调整弧度*/
-            border-radius: 60px 30px 60px 30px;
+            border-radius: 50px 30px 50px 30px;
+            background-color: transparent;
         }
 
         /*登录居中和字体样式*/
@@ -68,9 +69,10 @@
             width: 67%;
             margin-top: 10px;
             /*彩色颜色渐变*/
-            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+            /*background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
-                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);*/
+                background-color:#B47879;
             border-radius: 50px 50px 50px 50px;
 
         }
@@ -78,6 +80,7 @@
         /*字体颜色*/
         .in {
             color: black;
+
         }
 
         /*图片*/
@@ -98,6 +101,11 @@
             
             font-family: Georgia, 'Times New Roman', Times, serif;;
         }
+        .loge1{
+            position: absolute;
+            left: 355px;
+            top: 50px
+        }
     </style>
     <script>
         function displayDate() {
@@ -106,29 +114,29 @@
     </script>
 </head>
 
-<body background="Forest-wood-fence-sunlight_1680x1050.jpeg" style="height: 950px;">
+<body background="20220917004.jpeg" style="background-size: 100%;">
 
     <div class="one6">
-        <img src="logo.jpg" width="50" heght="50" style="position: 10px; position: fixed;">
+        <img src="标志.jpg" width="50" heght="50" style="position: 10px; position: fixed;">
     </div>
 
     <div class="one" align="center">
 
-        <table width="355" height="200" border="0" align="center" cellspacing="0">
-
+        <table width="355" height="300" border="0" align="center" cellspacing="0" style="position:relative;top:50px;left: 200px;">
             <tr>
                 <td class="windows" solspan="2">
                     <h1 style="margin: 10px;">
-                        <sup>登</sup>
-                        <sub>录</sub>
+                        <sup><登</sup>
+                        <sub>录></sub>
                     </h1>
                 </td>
             </tr>
+            
             <tr>
                 <td width="108" height="57" align="right" class="Mandy" solspan="2">
                     <div class="box">
 
-                        <input type="text" name="" placeholder="账户" id="pwd" style="background: #DBBFC0;">
+                        <input type="text" name="" placeholder="账户" id="pwd" style="background: #DBBFC0;background-color:transparent;">
                     </div>
                 </td>
             </tr>
@@ -136,7 +144,7 @@
                 <td height="108" height="57" align="right" solspan="2">
                     <div class="box">
 
-                        <input type="password" name="" placeholder="密码" id="pwd" style="background: #DBBFC0;">
+                        <input type="password" name="" placeholder="密码" id="pwd" style="background: #DBBFC0;background-color:transparent;">
                     </div>
                 </td>
             </tr>
@@ -153,7 +161,7 @@
             <tr>
                 <td height="100" colspan="2" align="center" class="in">
 
-                    <a href="主页.html"><input type="submit" value="登录" class="btn" text="black"
+                    <a href="索引.html"><input type="submit" value="Login" class="btn" text="black"
                             style="color: black; max-width:200px; border:10px;margin-top: 0px;"></a>
 
                 </td>
@@ -165,9 +173,10 @@
         <p id="demo" style="color:aqua; position:absolute ; bottom: 20px;">->这里可以点击显示日历和时间<-</p>
         <button type="button" onclick="displayDate()"
             style="background-color: transparent;border: 0px;color:aqua;padding: 0px; position:absolute; bottom:10px">显示日期</button>
-
+            
+            <div class="loge1" style="position: absolute;"><img src="WechatIMG2682.png" width="400" height="560"></div>
     
 </body>
 <!--static、relative、absolute、fixed
-    静态位置、相对位置、绝对位置、固定位置-->>
+    静态位置、相对位置、绝对位置、固定位置-->
 </html>
